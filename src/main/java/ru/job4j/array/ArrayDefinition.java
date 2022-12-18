@@ -8,5 +8,14 @@ public class ArrayDefinition {
         System.out.println("Размер массива равен: " + ages.length);
         System.out.println("Размер массива равен: " + surnames.length);
         System.out.println("Размер массива равен: " + prices.length);
+        String[] names = new String[4];
+        names[0] = "Petya";
+        names[1] = "Semen";
+        names[2] = "Elena";
+        names[3] = "Marina";
+        System.out.println("Произвольное имя: " + names[0]);
+        System.out.println("Произвольное имя: " + names[1]);
+        System.out.println("Произвольное имя: " + names[2]);
+        System.out.println("Произвольное имя: " + names[3]);
     }
 }
