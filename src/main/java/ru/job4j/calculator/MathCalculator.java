@@ -27,6 +27,5 @@ public class MathCalculator {
                 + MathFunction.sum(first, second)
                 + MathFunction.multiply(first, second);
     }
-
 }
 
