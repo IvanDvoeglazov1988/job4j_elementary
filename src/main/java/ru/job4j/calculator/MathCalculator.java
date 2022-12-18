@@ -1,6 +1,7 @@
 package ru.job4j.calculator;
 
 import ru.job4j.math.MathFunction;
+import static ru.job4j.math.MathFunction.*;
 
 public class MathCalculator {
 
@@ -24,7 +25,6 @@ public class MathCalculator {
         return MathFunction.sum(first, second)
                 + MathFunction.div(first, second)
                 + MathFunction.sub(first, second)
-                + MathFunction.sum(first, second)
                 + MathFunction.multiply(first, second);
     }
 }
