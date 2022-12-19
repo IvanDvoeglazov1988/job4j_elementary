@@ -12,6 +12,7 @@ public class FindLoopTest {
         int expected = 0;
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     public void whenDiapasonHas8ThenResultEqualFinish() {
         int[] data = new int[] {5, 2, 10, 2, 4, 8, 14, 3, 21, 16};
