@@ -1,6 +1,7 @@
 package ru.job4j.array;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.*;
 import static ru.job4j.array.JavaNameValidator.*;
 
@@ -36,10 +37,10 @@ class JavaNameValidatorTest {
         assertThat(isNameValid("123")).isFalse();
     }
 
-    //@Test
-    //void whenFirstLatinUpperCaseIsInvalid() {
-    //    assertThat(isNameValid("First")).isFalse();
-    //}
+    @Test
+    void whenFirstLatinUpperCaseIsInvalid() {
+        assertThat(isNameValid("First")).isFalse();
+    }
 
     @Test
     void whenLatNumberAndTwoSpecialSymbolsUnderValid() {

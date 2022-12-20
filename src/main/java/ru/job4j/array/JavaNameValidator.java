@@ -1,6 +1,7 @@
 package ru.job4j.array;
 
 public class JavaNameValidator {
+
     public static boolean isNameValid(String name) {
         for (int i = 0; i < name.length(); i++) {
             int codeP = name.codePointAt(i);
