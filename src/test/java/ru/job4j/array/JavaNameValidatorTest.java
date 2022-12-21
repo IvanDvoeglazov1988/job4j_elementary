@@ -38,6 +38,11 @@ class JavaNameValidatorTest {
     }
 
     @Test
+    void whenFirstLatinUpperCaseIsInvalid() {
+        assertThat(isNameValid("First")).isFalse();
+    }
+
+    @Test
     void whenLatNumberAndTwoSpecialSymbolsUnderValid() {
         assertThat(isNameValid("fir$t_u$er_1")).isTrue();
     }
