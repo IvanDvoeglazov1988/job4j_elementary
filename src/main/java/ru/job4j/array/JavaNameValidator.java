@@ -1,9 +1,10 @@
 package ru.job4j.array;
 
+import java.util.Arrays;
+
 import static java.lang.Character.*;
 
 public class JavaNameValidator {
-
     public static boolean isNameValid(String name) {
         if (name.isEmpty() || isUpperCase(name.codePointAt(0)) || isDigit(name.codePointAt(0))) {
             return false;
