@@ -1,21 +1,20 @@
 package ru.job4j.array;
 
+import static java.lang.Character.*;
+
 public class JavaNameValidator {
+
     public static boolean isNameValid(String name) {
-        if (name.isEmpty()) {
-            return false;
-        }
-        char sim = name.charAt(0);
-        if (Character.isUpperCase(sim)) {
+        if (name.isEmpty() || isUpperCase(name.codePointAt(0)) || isDigit(name.codePointAt(0))) {
             return false;
         }
         for (int i = 1; i < name.length(); i++) {
             int codeP = name.codePointAt(i);
-            if (isSpecialSymbol(codeP) || isUpperLatinLetter(codeP) || isLowerLatinLetter(codeP)) {
-                return true;
+            if (!(isSpecialSymbol(codeP) || isUpperLatinLetter(codeP) || isLowerLatinLetter(codeP) || isDigit(codeP))) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     public static boolean isSpecialSymbol(int code) {
@@ -29,6 +28,10 @@ public class JavaNameValidator {
     public static boolean isLowerLatinLetter(int code) {
         return code >= 97 && code <= 122;
     }
-}
 
+    public static void main(String[] args) {
+        System.out.println(1 + 3);
+    }
+
+}
 
